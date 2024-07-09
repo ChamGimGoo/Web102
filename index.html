@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
-    width / height
-    display : inline, block, inline-block
-    line-height / overflow / float
-    border-bottom
-    color
-    text-align : decoration
-    font size : weight / family
-    backgound-color size / image
-    margin / padding
-    enoughly enough...
- -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- li 코드 너무 지저분해서 style 사용. -->
+    <style>
+        li {
+            height: 50px;
+            margin: 0 40px 0 40px;
+            display: inline-block;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li a:hover {
+            color: red;
+            border-bottom: 2px solid black;
+        }
+    </style>
+
     <title>Web 1-02 Quest</title>
 </head>
-<body style="margin : 0 auto">
-    <header style="
-     background-color:blanchedalmond;">
-        <ul style="
-            margin : auto;
-            width: fit-content;
-            height : 120px;" >
 
-            <li style="width: 100px; height: 50px; margin: 0 40px 0 40px; display: inline-block;">
-                <a href='#'>How it works</a>
-            </li>
-
-            <li style="height: 50px; margin: 0 40px 0 40px; display: inline;"><a href='#'>Gifts</a></li>
-            <li style="height: 50px; margin: 0 40px 0 40px; display: inline;"><a href='/src/about.html'>About</a></li>
-            
-            <li 
-            style="
-                display: inline-block;
-                margin-top: 33px;
-                height: 50px; 
-                "><img src="img/logo.png" alt="logo.png" ><a href='/page1'></a></li>
-            
-            <li style="height: 50px; margin: 0 40px 0 40px; display: inline;"><a href='#'>Login</a></li>
-            <li style="height: 50px; margin: 0 40px 0 40px; display: inline;"><a href='#'>Members</a></li>
-            <li style="height: 50px; margin: 0 40px 0 40px; display: inline;"><a href='#'>Contracts</a></li>
+<body>
+    <header style="background-color:blanchedalmond;">
+        <ul style="margin : auto; width: fit-content; height : 120px;">
+            <li><a href='#'>How it works</a></li>
+            <li><a href='#'>Gifts</a></li>
+            <li><a href='/src/about.html'>About</a></li>
+            <img style="margin: 33px 40px 0 40px; display: inline-block;height: 50px;" src="img/logo.png" alt="logo.png">
+            <li><a href='#'>Login</a></li>
+            <li><a href='#'>Members</a></li>
+            <li><a href='#'>Contracts</a></li>
         </ul>
     </header>
 
     <main>
-        <img style="height: 464px; display: block;"src="img/main.png">
+        <img style="height: 464px; display: block;" src="img/main.png">
 
         <div style="color :rgb(145, 98, 38);
         padding: 30px 0 30px 0; background-color:blanchedalmond; text-align: center;">
@@ -64,33 +58,36 @@
         </div>
 
         <div style="padding: 10px 0 10px 0; background-color:coral; text-align: center; color: brown;">
-            <div style="width : 250px; display: inline-block; margin-left: 48px; margin-right: 24px;">
+            <div style="width : 250px; display: inline-block;  margin: 0 48px 0 24px;">
                 <img style="display: inline-block;" src="img/icon1.png">
-                <p>sadasdf<br>fnjasdfk<br>dasasdf<br>dsasdfasa</p> 
+                <p>행복했건 것만<br>기억에 남아<br>나를 천천히 잊어주기를<br>사랑했던...</p>
             </div>
             <div style="width : 250px ; display: inline-block;margin: 0 24px 0 24px;">
                 <img style="display: inline-block;" src="img/icon2.png">
-                <p>sadasdf<br>fnjasdfk<br>dasasdf<br>dsasdfasa</p> 
+                <p>그대가 내 안에 박혔다<br>그대가 내 안에 박혔다 그대가<br>나밖에 몰랐던 내가<br>사랑을 배워가고 있다</p>
             </div>
             <div style="width : 250px ; display: inline-block; margin: 0 24px 0 24px;">
                 <img style="display: inline-block;" src="img/icon3.png">
-                <p>sadasdf<br>fnjasdfk<br>dasasdf<br>dsasdfasa</p> 
+                <p>오늘 같은밤<br>이대로 머물러도 될 꿈이라면<br>바랄 수 없는 걸 바라도 된다면<br>두렵지 않다면</p>
             </div>
             <div style="width : 250px ; display: inline-block; margin: 0 24px 0 48px;">
                 <img style="display: inline-block;" src="img/icon4.png">
-                <p>sadasdf<br>fnjasdfk<br>dasasdf<br>dsasdfasa</p> 
+                <p>Fall away your my sunshine we are together 나는 사랑보다 좋은 추억 남겨갈 거야 텀블러 한 잔에 널 털어 넘기고 </p>
             </div>
         </div>
     </main>
     <footer>
-        <div style="background-color: rgb(236, 236, 236); text-align: center;">
+        <!-- vscode 에러인지 16진수 안들어감... EC = 236 -->
+        <div style="background-color: rgb(236, 236, 236); ">
             <div style="width:771px ; height: 304px; margin : auto">
-                <p style="width: 500px; margin-right: 30px; font-size: 14px; margin-top: 150px; float:inline-start;; background-color: aqua;">
-                    Chef is good perfect great awesome sajdfnas jkdfnsjkadnf jksadnf jknsadjk fnjksadnfk jsadnkjf nsadjfk 
+                <!-- inline-start 말고는 사진 옆에 있는 텍스트를 정렬할 방법이 아무리 생각해도 없었음 ㅠ -->
+                <p style="width: 500px; margin-right: 30px; font-size: 14px; margin-top: 150px; float:inline-start;">
+                    오늘은 가지마 오늘만 가지마 오늘만 더 옆에 있어주면 나 잊을 수 있어 오늘은 가지마 제발 떠나지마
                 </p>
                 <img src="img/chef.png" alt="chef" style="height: 304px; display: inline-block; margin: 0;">
             </div>
         </div>
     </footer>
 </body>
+
 </html>
