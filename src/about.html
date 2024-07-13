@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- 
-    width / height
-    display : inline, block, inline-block
-    line-height / overflow / float
-    border-bottom
-    color
-    text-align : decoration
-    font size : weight / family
-    backgound-color size / image
-    margin / padding
-    enoughly enough...
- -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +7,15 @@
     <title>Document</title>
 
     <style>
+        *{
+            margin : 0 auto;
+            padding: 0;
+        }
+        .top{
+            width: 1000px;
+            height: 500px;
+            font-size: 0;
+        }
         .box_all{
             width: 210px;
             height: 210px;
@@ -30,53 +27,49 @@
             font-size: 14px;
             overflow: hidden;
         }
+        .footer{
+            width: 1000px;
+            height: 40px;
+            background-color:rgb(171, 24, 48);
+            font-size: 14px;
+            color: orange;
+        }
+        ul{
+            display: inline-block;
+            line-height: 40px;
+        }
+        li {
+            margin: 0 10px 0 10px;
+            color: palegreen;
+            display: inline-block;
+        }
+
     </style>
 </head>
-<body style="padding-top: 30px; font-size: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color : black">
-    
-    <div style="
-        width: 1000px;
-        height: 500px;
-        line-height:0;
-        font-size: 0;
-        margin: 0px auto;
-        ">
+<body style="margin-top: 30px;">
 
-        <img src="../img/chef_about.png"
-        style="
-        float: inline-start;
-        width: 750px;
-        height: 500px;
-        line-height: 0px;
-        margin: 0;
-        ">
+    <div class="top">
+        <div 
+        style="float: left; width: 750px;height: 500px; background-image: url('../img/chef_about.png');">
+        </div>
+        
+        <img src="../img/right1.png"
+        style="width: 250px; height: 250px;">
+        <img src="../img/right2.png"
+        style="width: 250px;height: 250px;">
+        
         <div
+        class="box_all"
         style="
-        float: inline-end;
-        width: 250px;
-        height: 250px;">
-            <img src="../img/right1.png"
-            style="
-            width: 250px; 
-            height: 250px;
-            line-height: 0px;
+            background-color: rgba(27, 185, 80, 0.575);
+            float:inline-start;
+            margin-top: -250px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             ">
-            <img src="../img/right2.png"
-            style="
-            width: 250px;
-            height: 250px;
-            line-height: 0px;">
-        </div>
-
-
-        <div
-        style="
-        width: 210px;
-        height: 210px;
-        background-color: rgba(51, 51, 96, 0.9);
-        float: left;
-        ">
-        </div>
+            <h1>Global<br>BUSINESS</h1>
+            <br>
+            맥북에 맑은 고딕이 없어서 일단 프랜클린 고딕으로 진행했습니다.
+        </div>  
     </div>
 
     <div style="
@@ -91,7 +84,7 @@
         height: 500px;
         display: inline-block;
         ">
-            <div class="box_all" >
+            <div class="box_all" style="background-color: bisque;">
                 <h1>TITLE</h1>
                 <p>content </p>
             </div>
@@ -102,7 +95,7 @@
                 <p>content </p>
             </div>
             <div 
-                class="box_all" >
+                class="box_all"style="background-color: bisque;" >
                 <h1>TITLE</h1>
                 <p>content </p>
             </div>
@@ -112,7 +105,7 @@
                 <p>content </p>
             </div>
             <div 
-                class="box_all" >
+                class="box_all"style="background-color: bisque;" >
                 <h1>TITLE</h1>
                 <p>content </p>
             </div>
@@ -124,8 +117,9 @@
         </div>
 
         <div style="
-        width: 250px;
-        height: 500px;
+        width: 210px;
+        height: 460px;
+        padding: 20px;
         display: inline-block;
         margin: 0;
         background-color: violet;
@@ -134,14 +128,27 @@
 
         </div>
         
-        <div style="
-        width: 750px;
-        height: 40px;
-        background-color:chocolate;
-        margin: 0 auto;
-        font-size: 14px;
-        text-align: center;">
-            법적 고지 | 이메일무단수집거부 | 이용약관 | 개인정보취급방침 | 고객센터 | 입찰공고
+        <div class="footer">
+            <ul>
+                <li>
+                    법적고지
+                </li>|
+                <li>
+                    이메일무단수집거부
+                </li>|
+                <li>
+                    이용약관
+                </li>|
+                <li>
+                    개인정보취급방침
+                </li>|
+                <li>
+                    고객센타
+                </li>|
+                <li>
+                    입찰공고
+                </li>
+            </ul>
         </div>
     </div>
 </body>
