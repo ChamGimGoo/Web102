@@ -29,6 +29,36 @@ body{
     font-size: 14px;
     overflow: hidden;
 }
+
+.floatingBox{
+    background-color: rgba(27, 185, 80, 0.575);
+    margin-top: -250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainBox{
+
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.mainBox > .left{
+    width: 750px;
+    height: 500px;
+    display: inline-block;
+}
+
+.mainBox > .right{
+    width: 210px;
+    height: 460px;
+    padding: 20px;
+    display: inline-block;
+    margin: 0;
+    background-color: violet;
+}
+
 .footer{
     width: 1000px;
     height: 40px;
