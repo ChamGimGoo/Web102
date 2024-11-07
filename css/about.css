@@ -1,0 +1,36 @@
+*{
+    margin : 0 auto;
+    padding: 0;
+}
+.top{
+    width: 1000px;
+    height: 500px;
+    font-size: 0;
+}
+.box_all{
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    margin: 0px;
+    padding:20px;
+    color: black;
+    background-color: aliceblue;
+    font-size: 14px;
+    overflow: hidden;
+}
+.footer{
+    width: 1000px;
+    height: 40px;
+    background-color:rgb(171, 24, 48);
+    font-size: 14px;
+    color: orange;
+}
+ul{
+    display: inline-block;
+    line-height: 40px;
+}
+li {
+    margin: 0 10px 0 10px;
+    color: palegreen;
+    display: inline-block;
+}
